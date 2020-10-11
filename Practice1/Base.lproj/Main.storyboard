@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Practice1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the first step to iOS development?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZwD-AU-FbL">
+                                <rect key="frame" x="46" y="74" width="322" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGI-zE-dFM">
+                                <rect key="frame" x="0.0" y="103" width="51" height="30"/>
+                                <state key="normal" title="Answer"/>
+                                <connections>
+                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OQH-Bd-D0S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHi-xK-pQE">
+                                <rect key="frame" x="382" y="103" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4jW-8h-h6h"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6b-lz-BSM">
+                                <rect key="frame" x="0.0" y="417.5" width="414" height="61"/>
+                                <string key="text">Create the user interface. As we create the UI, we will get a better understanding of our application. Then we breathe life into our application.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZwD-AU-FbL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="F6d-SR-tRu"/>
+                            <constraint firstItem="ZwD-AU-FbL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FQf-sr-Lhv"/>
+                            <constraint firstItem="L6b-lz-BSM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JL3-AM-DYU"/>
+                            <constraint firstItem="EHi-xK-pQE" firstAttribute="firstBaseline" secondItem="UGI-zE-dFM" secondAttribute="firstBaseline" id="KeB-Aj-KRV"/>
+                            <constraint firstItem="UGI-zE-dFM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TDe-dm-y4z"/>
+                            <constraint firstItem="L6b-lz-BSM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YVN-mX-7eI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EHi-xK-pQE" secondAttribute="trailing" id="iEZ-02-IvS"/>
+                            <constraint firstItem="L6b-lz-BSM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mO1-ne-0SK"/>
+                            <constraint firstItem="UGI-zE-dFM" firstAttribute="top" secondItem="ZwD-AU-FbL" secondAttribute="bottom" constant="8" symbolic="YES" id="xYe-27-7VY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="L6b-lz-BSM" id="0sl-NY-nyh"/>
+                        <outlet property="questionLabel" destination="ZwD-AU-FbL" id="M0S-Ra-m0I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
+        </scene>
+    </scenes>
+</document>
